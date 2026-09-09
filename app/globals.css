@@ -1107,3 +1107,876 @@ textarea {
     line-height: 1.7;
   }
 }
+/* =====================================================
+   PREMIUM MOTION & MICRO-INTERACTIONS
+   Quality-Benchmark Solutions
+===================================================== */
+
+/* -------------------------
+   GLOBAL TRANSITIONS
+-------------------------- */
+
+.hero-content,
+.quality-visual,
+.service-card,
+.ai-card,
+.approach-panel,
+.approach-step,
+.industry-list span,
+.mission,
+.contact-form-card {
+  will-change: transform, opacity;
+}
+
+
+/* =====================================================
+   HERO ENTRANCE
+===================================================== */
+
+.hero-reveal {
+  animation: heroEntrance 0.9s cubic-bezier(.22,.8,.28,1) both;
+}
+
+.hero-copy-reveal .eyebrow {
+  animation: fadeUp 0.7s ease both;
+}
+
+.hero-copy-reveal h1 {
+  animation: fadeUp 0.8s ease both;
+  animation-delay: 0.08s;
+}
+
+.hero-copy-reveal .hero-description {
+  animation: fadeUp 0.8s ease both;
+  animation-delay: 0.16s;
+}
+
+.hero-copy-reveal .hero-actions {
+  animation: fadeUp 0.8s ease both;
+  animation-delay: 0.24s;
+}
+
+.hero-copy-reveal .hero-trust {
+  animation: fadeUp 0.9s ease both;
+  animation-delay: 0.32s;
+}
+
+
+/* =====================================================
+   FLOATING HERO GLOWS
+===================================================== */
+
+.hero-glow-one {
+  animation: glowFloatOne 12s ease-in-out infinite alternate;
+}
+
+.hero-glow-two {
+  animation: glowFloatTwo 14s ease-in-out infinite alternate;
+}
+
+
+/* =====================================================
+   SUBTLE DATA PARTICLES
+===================================================== */
+
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(22, 119, 200, 0.35);
+  box-shadow: 0 0 18px rgba(22, 119, 200, 0.25);
+}
+
+.particle-one {
+  top: 20%;
+  left: 8%;
+  animation: particleFloatOne 10s ease-in-out infinite;
+}
+
+.particle-two {
+  top: 70%;
+  left: 30%;
+  width: 3px;
+  height: 3px;
+  animation: particleFloatTwo 12s ease-in-out infinite;
+}
+
+.particle-three {
+  top: 16%;
+  right: 15%;
+  width: 4px;
+  height: 4px;
+  animation: particleFloatThree 9s ease-in-out infinite;
+}
+
+.particle-four {
+  bottom: 18%;
+  right: 8%;
+  width: 6px;
+  height: 6px;
+  opacity: 0.5;
+  animation: particleFloatFour 13s ease-in-out infinite;
+}
+
+.particle-five {
+  bottom: 35%;
+  left: 48%;
+  width: 3px;
+  height: 3px;
+  animation: particleFloatTwo 11s ease-in-out infinite reverse;
+}
+
+
+/* =====================================================
+   QUALITY DASHBOARD
+===================================================== */
+
+.premium-dashboard {
+  animation:
+    dashboardEntrance 1s cubic-bezier(.22,.8,.28,1) both,
+    dashboardFloat 7s ease-in-out 1.2s infinite;
+}
+
+.premium-dashboard::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: 22px;
+  pointer-events: none;
+  opacity: 0;
+  background:
+    linear-gradient(
+      120deg,
+      transparent 20%,
+      rgba(112, 198, 255, 0.08) 50%,
+      transparent 80%
+    );
+  animation: dashboardSheen 8s ease-in-out infinite;
+}
+
+.quality-visual {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* READY STATUS PULSE */
+
+.status-live span {
+  animation: statusPulse 2.4s ease-out infinite;
+}
+
+.status-live {
+  animation: statusFade 4s ease-in-out infinite;
+}
+
+
+/* CONFIDENCE RING */
+
+.confidence-animated {
+  animation:
+    confidenceAppear 1.1s cubic-bezier(.22,.8,.28,1) both,
+    confidencePulse 6s ease-in-out 1.2s infinite;
+}
+
+
+/* =====================================================
+   ANIMATED PROGRESS BARS
+===================================================== */
+
+.metric-animate {
+  animation: metricFade 0.65s ease both;
+}
+
+.metric-delay-one {
+  animation-delay: 0.35s;
+}
+
+.metric-delay-two {
+  animation-delay: 0.55s;
+}
+
+.metric-delay-three {
+  animation-delay: 0.75s;
+}
+
+.metric-animate .progress span {
+  transform-origin: left center;
+  animation: progressReveal 1.2s cubic-bezier(.22,.8,.28,1) both;
+}
+
+.metric-delay-one .progress span {
+  animation-delay: 0.5s;
+}
+
+.metric-delay-two .progress span {
+  animation-delay: 0.7s;
+}
+
+.metric-delay-three .progress span {
+  animation-delay: 0.9s;
+}
+
+
+/* =====================================================
+   AI INSIGHT
+===================================================== */
+
+.ai-insight-animated {
+  animation: insightAppear 0.8s ease both;
+  animation-delay: 1s;
+}
+
+.ai-insight-animated .ai-icon {
+  animation: aiPulse 4s ease-in-out infinite;
+}
+
+.ai-insight-animated .ai-arrow {
+  animation: arrowFloat 2.8s ease-in-out infinite;
+}
+
+
+/* =====================================================
+   HERO TRUST
+===================================================== */
+
+.hero-trust div {
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.hero-trust div:hover {
+  transform: translateY(-3px);
+}
+
+.hero-trust div:hover strong {
+  color: #1677c8;
+}
+
+
+/* =====================================================
+   SERVICE CARDS
+===================================================== */
+
+.service-card {
+  transition:
+    transform 0.35s cubic-bezier(.22,.8,.28,1),
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(90deg, #1677c8, #67c7ff);
+  transition: width 0.4s ease;
+}
+
+.service-card:hover::before {
+  width: 100%;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.06);
+  box-shadow: 0 10px 24px rgba(22, 119, 200, 0.12);
+}
+
+.service-icon {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-line {
+  transition: width 0.35s ease;
+}
+
+.service-card:hover .service-line {
+  width: 70px;
+}
+
+
+/* SERVICE ENTRANCE */
+
+.service-reveal {
+  animation: serviceReveal 0.75s ease both;
+}
+
+.service-delay-01 {
+  animation-delay: 0.05s;
+}
+
+.service-delay-02 {
+  animation-delay: 0.1s;
+}
+
+.service-delay-03 {
+  animation-delay: 0.15s;
+}
+
+.service-delay-04 {
+  animation-delay: 0.2s;
+}
+
+.service-delay-05 {
+  animation-delay: 0.25s;
+}
+
+.service-delay-06 {
+  animation-delay: 0.3s;
+}
+
+
+/* =====================================================
+   AI CARDS
+===================================================== */
+
+.ai-card {
+  transition:
+    transform 0.35s cubic-bezier(.22,.8,.28,1),
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.ai-card:hover {
+  transform: translateY(-6px);
+  background: #1a3852;
+  border-color: rgba(112, 198, 255, 0.3);
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.16);
+}
+
+.ai-card:hover .ai-card-arrow {
+  transform: translate(4px, -4px);
+}
+
+.ai-card-arrow {
+  transition: transform 0.3s ease;
+}
+
+.ai-card-reveal {
+  animation: aiCardReveal 0.8s ease both;
+}
+
+.ai-card-delay-1 {
+  animation-delay: 0.05s;
+}
+
+.ai-card-delay-2 {
+  animation-delay: 0.12s;
+}
+
+.ai-card-delay-3 {
+  animation-delay: 0.19s;
+}
+
+.ai-card-delay-4 {
+  animation-delay: 0.26s;
+}
+
+
+/* =====================================================
+   INDUSTRY TAGS
+===================================================== */
+
+.industry-list span {
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.industry-list span:hover {
+  transform: translateY(-2px);
+  border-color: #b9ddf4;
+  background: #f7fbfe;
+  color: #1677c8;
+}
+
+
+/* =====================================================
+   APPROACH STEPS
+===================================================== */
+
+.approach-step {
+  transition: transform 0.25s ease;
+}
+
+.approach-step:hover {
+  transform: translateX(5px);
+}
+
+.approach-step:hover > span {
+  transform: scale(1.08);
+  background: #1677c8;
+  color: #ffffff;
+}
+
+.approach-step > span {
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.approach-step-animated {
+  animation: stepReveal 0.65s ease both;
+}
+
+.approach-step:nth-of-type(4) {
+  animation-delay: 0.1s;
+}
+
+.approach-step:nth-of-type(5) {
+  animation-delay: 0.2s;
+}
+
+.approach-step:nth-of-type(6) {
+  animation-delay: 0.3s;
+}
+
+.approach-step:nth-of-type(7) {
+  animation-delay: 0.4s;
+}
+
+
+/* =====================================================
+   BUTTON MICRO INTERACTIONS
+===================================================== */
+
+.btn span {
+  transition: transform 0.25s ease;
+}
+
+.primary:hover span {
+  transform: translateX(4px);
+}
+
+.primary {
+  position: relative;
+  overflow: hidden;
+}
+
+.primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.16),
+    transparent 70%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
+}
+
+.primary:hover::after {
+  transform: translateX(120%);
+}
+
+
+/* =====================================================
+   CONTACT FORM
+===================================================== */
+
+.contact-form-card {
+  animation: contactCardFloat 7s ease-in-out infinite;
+}
+
+.form-dot {
+  animation: formPulse 2.5s ease-out infinite;
+}
+
+input,
+select,
+textarea {
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  transform: translateY(-1px);
+}
+
+
+/* =====================================================
+   WHATSAPP
+===================================================== */
+
+.whatsapp {
+  animation: whatsappPulse 4s ease-in-out infinite;
+}
+
+.whatsapp::before {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border-radius: 50%;
+  border: 1px solid rgba(37, 211, 102, 0.28);
+  animation: whatsappRing 3s ease-out infinite;
+}
+
+
+/* =====================================================
+   KEYFRAMES
+===================================================== */
+
+@keyframes heroEntrance {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dashboardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes dashboardFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+@keyframes dashboardSheen {
+  0%,
+  65%,
+  100% {
+    opacity: 0;
+    transform: translateX(-25%);
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0;
+    transform: translateX(25%);
+  }
+}
+
+@keyframes glowFloatOne {
+  from {
+    transform: translate(0, 0) scale(1);
+  }
+
+  to {
+    transform: translate(-35px, 40px) scale(1.08);
+  }
+}
+
+@keyframes glowFloatTwo {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(35px, -30px);
+  }
+}
+
+@keyframes confidenceAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.86);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes confidencePulse {
+  0%,
+  100% {
+    filter: brightness(1);
+  }
+
+  50% {
+    filter: brightness(1.08);
+  }
+}
+
+@keyframes progressReveal {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes metricFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes statusPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(81, 214, 149, 0.55);
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px rgba(81, 214, 149, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(81, 214, 149, 0);
+  }
+}
+
+@keyframes statusFade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+}
+
+@keyframes insightAppear {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aiPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(76, 182, 247, 0);
+  }
+
+  50% {
+    box-shadow: 0 0 25px rgba(76, 182, 247, 0.3);
+  }
+}
+
+@keyframes arrowFloat {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(3px, -3px);
+  }
+}
+
+@keyframes serviceReveal {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aiCardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes stepReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes contactCardFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes formPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(73, 201, 139, 0.5);
+  }
+
+  70% {
+    box-shadow: 0 0 0 7px rgba(73, 201, 139, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(73, 201, 139, 0);
+  }
+}
+
+@keyframes whatsappPulse {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes whatsappRing {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.85);
+  }
+
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+}
+
+@keyframes particleFloatOne {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: translate(35px, -28px);
+    opacity: 0.8;
+  }
+}
+
+@keyframes particleFloatTwo {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translate(-28px, -38px);
+    opacity: 0.75;
+  }
+}
+
+@keyframes particleFloatThree {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-24px, 30px);
+  }
+}
+
+@keyframes particleFloatFour {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translate(28px, -30px);
+    opacity: 0.7;
+  }
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+}
