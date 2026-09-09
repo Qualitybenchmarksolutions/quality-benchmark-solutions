@@ -107,12 +107,20 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section id="home" className="hero">
-        <div className="hero-glow hero-glow-one"></div>
-        <div className="hero-glow hero-glow-two"></div>
+<section id="home" className="hero">
+  <div className="hero-glow hero-glow-one"></div>
+  <div className="hero-glow hero-glow-two"></div>
 
-        <div className="wrap hero-grid">
-          <div className="hero-content">
+  <div className="hero-particles" aria-hidden="true">
+    <span className="particle particle-one"></span>
+    <span className="particle particle-two"></span>
+    <span className="particle particle-three"></span>
+    <span className="particle particle-four"></span>
+    <span className="particle particle-five"></span>
+  </div>
+
+        <div className="wrap hero-grid hero-reveal">
+          <div className="hero-content hero-copy-reveal">
             <div className="eyebrow">
               INDEPENDENT QUALITY ENGINEERING & SOFTWARE TESTING CONSULTING
             </div>
@@ -159,21 +167,21 @@ export default function Home() {
 
           {/* QUALITY INTELLIGENCE PANEL */}
 
-          <div className="quality-visual">
+          <div className="quality-visual premium-dashboard">
             <div className="visual-top">
               <div>
                 <span className="visual-label">QUALITY INTELLIGENCE</span>
                 <h3>Release Readiness</h3>
               </div>
 
-              <div className="status-ready">
+              <div className="status-ready status-live">
                 <span></span>
                 READY
               </div>
             </div>
 
             <div className="confidence">
-              <div className="confidence-circle">
+              <div className="confidence-circle confidence-animated">
                 <strong>96%</strong>
                 <span>CONFIDENCE</span>
               </div>
@@ -188,7 +196,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="metric">
+            <div className="metric metric-animate metric-delay-one">
               <div className="metric-header">
                 <span>Functional Coverage</span>
                 <strong>94%</strong>
@@ -198,7 +206,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="metric">
+            <div className="metric metric-animate metric-delay-two">
               <div className="metric-header">
                 <span>Automation Readiness</span>
                 <strong>87%</strong>
@@ -208,7 +216,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="metric">
+            <div className="metric metric-animate metric-delay-three">
               <div className="metric-header">
                 <span>Performance Readiness</span>
                 <strong>PASS</strong>
@@ -218,7 +226,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="ai-insight">
+            <div className="ai-insight ai-insight-animated">
               <div className="ai-icon">AI</div>
 
               <div>
@@ -271,7 +279,7 @@ export default function Home() {
 
           <div className="services-grid">
             {services.map((service) => (
-              <article className="service-card" key={service.title}>
+              <article   className={`service-card service-reveal service-delay-${service.number}`}   key={service.title} >
                 <div className="service-top">
                   <span className="service-number">{service.number}</span>
                   <div className="service-icon">{service.icon}</div>
@@ -319,7 +327,7 @@ export default function Home() {
 
           <div className="ai-cards">
             {aiServices.map((service, index) => (
-              <article className="ai-card" key={service.title}>
+              <article   className={`ai-card ai-card-reveal ai-card-delay-${index + 1}`}   key={service.title} >
                 <div className="ai-card-number">
                   0{index + 1}
                 </div>
@@ -388,7 +396,7 @@ export default function Home() {
               risks and release objectives.
             </p>
 
-            <div className="approach-step">
+            <div className="approach-step approach-step-animated">
               <span>01</span>
               <div>
                 <strong>Understand</strong>
@@ -396,7 +404,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="approach-step">
+            <div className="approach-step approach-step-animated">
               <span>02</span>
               <div>
                 <strong>Assess</strong>
@@ -404,7 +412,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="approach-step">
+            <div className="approach-step approach-step-animated">
               <span>03</span>
               <div>
                 <strong>Engineer</strong>
@@ -412,7 +420,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="approach-step">
+            <div className="approach-step approach-step-animated">
               <span>04</span>
               <div>
                 <strong>Assure</strong>
