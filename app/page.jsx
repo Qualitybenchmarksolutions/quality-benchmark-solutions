@@ -522,8 +522,8 @@ export default function Home() {
             <div className="contact-details">
               <div>
                 <span>CALL / WHATSAPP</span>
-                <a href="tel:+917019952138">
-                  +91 70199 52138
+                <a href="tel:+917676174925">
+                  +91 76761 74925
                 </a>
               </div>
 
