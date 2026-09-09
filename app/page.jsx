@@ -23,7 +23,7 @@ export default function Home(){
    <div className="stats"><div className="stat"><strong>15+</strong>Years of QA experience</div><div className="stat"><strong>Web</strong>Digital application testing</div><div className="stat"><strong>Mobile</strong>Cross-platform quality</div><div className="stat"><strong>End-to-End</strong>Functional & non-functional expertise</div></div>
   </div>
   <div className="hero-orb"><div className="orbit orbit-a"></div><div className="orbit orbit-b"></div><div className="core">Q<br/><span>QA</span></div><div className="signal s1"></div><div className="signal s2"></div><div className="signal s3"></div></div>
-  </div></div></section>
+  </div></section>
 
   <section id="services" className="section muted"><div className="wrap"><div className="eyebrow">What we do</div><h2>Quality engineering built around your business.</h2><p className="lead">From validating a critical release to improving an entire QA capability, Quality-Benchmark Solutions brings independent expertise and a practical delivery mindset.</p>
   <div className="grid">{services.map(([i,t,d])=><article className="card" key={t}><div className="icon">{i}</div><h3>{t}</h3><p>{d}</p></article>)}</div></div></section>
