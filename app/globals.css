@@ -2374,3 +2374,69 @@ textarea:focus {
     animation: none !important;
   }
 }
+/* MULTI-PAGE NAVIGATION ADDITIONS */
+.nav-link.active {
+  color: #6fc7f4 !important;
+}
+
+.inner-page {
+  min-height: 70vh;
+}
+
+.page-hero {
+  padding: 130px 0 90px;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(45, 145, 220, 0.15), transparent 28%),
+    linear-gradient(180deg, rgba(7, 17, 31, 0.95), rgba(7, 17, 31, 1));
+}
+
+.page-hero h1 {
+  max-width: 850px;
+  margin: 16px 0 20px;
+  font-size: clamp(48px, 7vw, 82px);
+  line-height: 1.05;
+}
+
+.page-hero h1 span,
+.section-heading h2 span,
+.about-title h2 span,
+.why-grid h2 span {
+  color: #65c1f3;
+}
+
+.page-hero .lead {
+  max-width: 760px;
+}
+
+.cta-band {
+  padding: 60px 0;
+  background: linear-gradient(135deg, rgba(17, 69, 108, 0.9), rgba(7, 17, 31, 1));
+  border-top: 1px solid rgba(101, 193, 243, 0.16);
+}
+
+.cta-band .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.cta-band h2 {
+  margin: 8px 0 0;
+  font-size: clamp(28px, 4vw, 46px);
+}
+
+.page-industries {
+  margin-top: 35px;
+}
+
+@media (max-width: 800px) {
+  .page-hero {
+    padding: 95px 0 65px;
+  }
+
+  .cta-band .wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
