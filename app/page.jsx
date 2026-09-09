@@ -590,7 +590,7 @@ export default function Home() {
 
       <a
         className="whatsapp"
-        href="https://wa.me/917019952138"
+        href="https://wa.me/+917676174925"
         target="_blank"
         rel="noreferrer"
         aria-label="Contact us on WhatsApp"
