@@ -1980,3 +1980,397 @@ textarea:focus {
   }
 
 }
+
+/* =====================================================
+   QUALITY INTELLIGENCE – RELEASE CONFIDENCE FLOW
+===================================================== */
+
+.quality-flow-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.quality-flow-panel::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: -170px;
+  bottom: -190px;
+  border-radius: 50%;
+  background: rgba(44, 145, 220, 0.08);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+
+/* INTRO */
+
+.quality-flow-intro {
+  margin: 4px 0 26px;
+  max-width: 560px;
+  color: #9eb3c6;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+
+/* STATUS */
+
+.quality-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #75d4ad;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.quality-status span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #55c79a;
+  animation: qualityStatusPulse 2.5s infinite;
+}
+
+
+/* QUALITY FLOW */
+
+.quality-flow {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  z-index: 2;
+}
+
+
+/* FLOW ITEM */
+
+.flow-item {
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 16px;
+  align-items: center;
+  padding: 14px 16px;
+  border: 1px solid rgba(117, 174, 214, 0.13);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease,
+    border-color 0.35s ease;
+  animation: flowItemAppear 0.7s ease both;
+}
+
+.flow-item:hover {
+  transform: translateX(5px);
+  background: rgba(56, 139, 205, 0.09);
+  border-color: rgba(107, 195, 255, 0.3);
+}
+
+
+/* FLOW ICON */
+
+.flow-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    135deg,
+    rgba(49, 148, 220, 0.95),
+    rgba(26, 79, 125, 0.95)
+  );
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 16px;
+  box-shadow: 0 8px 24px rgba(13, 79, 126, 0.18);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.flow-item:hover .flow-icon {
+  transform: scale(1.06);
+  box-shadow: 0 10px 30px rgba(68, 173, 244, 0.24);
+}
+
+
+/* FLOW TEXT */
+
+.flow-item span {
+  display: block;
+  margin-bottom: 2px;
+  color: #63b9ee;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+.flow-item strong {
+  display: block;
+  color: #edf5fb;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.flow-item p {
+  margin: 4px 0 0;
+  color: #94aabd;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+
+/* CONNECTOR BETWEEN STEPS */
+
+.flow-connector {
+  position: relative;
+  height: 18px;
+  margin-left: 38px;
+  width: 2px;
+  overflow: hidden;
+  background: rgba(99, 185, 238, 0.14);
+}
+
+.flow-connector span {
+  position: absolute;
+  width: 100%;
+  height: 9px;
+  top: -10px;
+  background: #65c1f3;
+  box-shadow: 0 0 12px rgba(101, 193, 243, 0.8);
+  animation: signalFlow 2.4s linear infinite;
+}
+
+
+/* DIFFERENT ANIMATION TIMINGS */
+
+.flow-item-one {
+  animation-delay: 0.05s;
+}
+
+.flow-item-two {
+  animation-delay: 0.15s;
+}
+
+.flow-item-three {
+  animation-delay: 0.25s;
+}
+
+.flow-item-four {
+  animation-delay: 0.35s;
+}
+
+
+/* OUTCOME */
+
+.release-outcome {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 42px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(33, 102, 155, 0.34),
+    rgba(18, 53, 81, 0.6)
+  );
+  border: 1px solid rgba(101, 193, 243, 0.28);
+  animation: outcomeAppear 0.9s ease both;
+  animation-delay: 0.55s;
+}
+
+
+/* PULSE */
+
+.outcome-pulse {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #5ec0f5;
+  box-shadow: 0 0 0 0 rgba(94, 192, 245, 0.6);
+  animation: outcomePulse 2.6s infinite;
+}
+
+
+/* OUTCOME CONTENT */
+
+.outcome-content span {
+  display: block;
+  margin-bottom: 4px;
+  color: #70c8f6;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+}
+
+.outcome-content strong {
+  display: block;
+  color: #ffffff;
+  font-size: 17px;
+}
+
+.outcome-content p {
+  margin: 4px 0 0;
+  color: #a8bfce;
+  font-size: 12px;
+}
+
+
+/* ARROW */
+
+.outcome-arrow {
+  color: #6fc7f4;
+  font-size: 22px;
+  transition: transform 0.3s ease;
+}
+
+.release-outcome:hover .outcome-arrow {
+  transform: translateX(5px);
+}
+
+
+/* =====================================================
+   ANIMATIONS
+===================================================== */
+
+@keyframes flowItemAppear {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes signalFlow {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+}
+
+
+@keyframes qualityStatusPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(85, 199, 154, 0.5);
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px rgba(85, 199, 154, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(85, 199, 154, 0);
+  }
+}
+
+
+@keyframes outcomeAppear {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes outcomePulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(94, 192, 245, 0.5);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(94, 192, 245, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(94, 192, 245, 0);
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 750px) {
+  .quality-flow-intro {
+    font-size: 13px;
+  }
+
+  .flow-item {
+    grid-template-columns: 42px 1fr;
+    padding: 13px;
+    gap: 12px;
+  }
+
+  .flow-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .flow-item strong {
+    font-size: 14px;
+  }
+
+  .flow-item p {
+    font-size: 11px;
+  }
+
+  .flow-connector {
+    margin-left: 32px;
+  }
+
+  .release-outcome {
+    grid-template-columns: 34px 1fr;
+  }
+
+  .outcome-arrow {
+    display: none;
+  }
+
+  .outcome-content strong {
+    font-size: 15px;
+  }
+}
+
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .flow-item,
+  .flow-connector span,
+  .quality-status span,
+  .release-outcome,
+  .outcome-pulse {
+    animation: none !important;
+  }
+}
