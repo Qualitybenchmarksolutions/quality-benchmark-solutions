@@ -43,16 +43,23 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
+
+  background: #ffffff;
+  padding: 7px 14px;
+  border-radius: 10px;
+
+  min-width: 245px;
+  height: 68px;
 }
 
 .brand img {
-  width: 255px;
-  height: 68px;
-  object-fit: contain;
-  object-position: left center;
+  width: 225px;
+  height: 54px;
 
-  /* Makes a dark logo more visible */
-  filter: brightness(1.35) contrast(1.15);
+  object-fit: contain;
+  object-position: center;
+
+  filter: none;
 }
 
 .links {
