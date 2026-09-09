@@ -445,8 +445,8 @@ export default function Home() {
 
             <p>
               Founded and led by <strong>Shashank Shekhar</strong>, an
-              experienced Test Manager and Quality Engineering professional with
-              15+ years of experience across functional testing, performance
+              experienced Technology Leader in Testing and Quality Engineering with
+              decades of experience across functional testing, performance
               testing, test automation, enterprise applications and digital
               platforms.
             </p>
