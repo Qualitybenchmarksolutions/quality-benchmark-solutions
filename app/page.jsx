@@ -167,78 +167,102 @@ export default function Home() {
 
           {/* QUALITY INTELLIGENCE PANEL */}
 
-          <div className="quality-visual premium-dashboard">
-            <div className="visual-top">
-              <div>
-                <span className="visual-label">QUALITY INTELLIGENCE</span>
-                <h3>Release Readiness</h3>
-              </div>
+{/* QUALITY INTELLIGENCE PANEL */}
 
-              <div className="status-ready status-live">
-                <span></span>
-                READY
-              </div>
-            </div>
+<div className="quality-visual quality-flow-panel">
+  <div className="visual-top">
+    <div>
+      <span className="visual-label">QUALITY INTELLIGENCE</span>
+      <h3>From Testing to Release Confidence</h3>
+    </div>
 
-            <div className="confidence">
-              <div className="confidence-circle confidence-animated">
-                <strong>96%</strong>
-                <span>CONFIDENCE</span>
-              </div>
+    <div className="quality-status">
+      <span></span>
+      QUALITY ASSURED
+    </div>
+  </div>
 
-              <div className="confidence-copy">
-                <span>QUALITY SCORE</span>
-                <strong>High Release Confidence</strong>
-                <p>
-                  Quality signals consolidated across testing, automation,
-                  performance and delivery risk.
-                </p>
-              </div>
-            </div>
+  <p className="quality-flow-intro">
+    We combine multiple quality signals to give teams a clearer understanding
+    of software risk before release.
+  </p>
 
-            <div className="metric metric-animate metric-delay-one">
-              <div className="metric-header">
-                <span>Functional Coverage</span>
-                <strong>94%</strong>
-              </div>
-              <div className="progress">
-                <span className="progress-one"></span>
-              </div>
-            </div>
+  <div className="quality-flow">
+    <div className="flow-item flow-item-one">
+      <div className="flow-icon">✓</div>
 
-            <div className="metric metric-animate metric-delay-two">
-              <div className="metric-header">
-                <span>Automation Readiness</span>
-                <strong>87%</strong>
-              </div>
-              <div className="progress">
-                <span className="progress-two"></span>
-              </div>
-            </div>
+      <div>
+        <span>01</span>
+        <strong>Functional Quality</strong>
+        <p>
+          Business workflows, user journeys and critical application behaviour.
+        </p>
+      </div>
+    </div>
 
-            <div className="metric metric-animate metric-delay-three">
-              <div className="metric-header">
-                <span>Performance Readiness</span>
-                <strong>PASS</strong>
-              </div>
-              <div className="progress">
-                <span className="progress-three"></span>
-              </div>
-            </div>
+    <div className="flow-connector">
+      <span></span>
+    </div>
 
-            <div className="ai-insight ai-insight-animated">
-              <div className="ai-icon">AI</div>
+    <div className="flow-item flow-item-two">
+      <div className="flow-icon">⚙</div>
 
-              <div>
-                <span>AI QUALITY INSIGHT</span>
-                <strong>Risk patterns detected and prioritised.</strong>
-              </div>
+      <div>
+        <span>02</span>
+        <strong>Automation Confidence</strong>
+        <p>
+          Regression coverage, automation effectiveness and delivery speed.
+        </p>
+      </div>
+    </div>
 
-              <div className="ai-arrow">↗</div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="flow-connector">
+      <span></span>
+    </div>
+
+    <div className="flow-item flow-item-three">
+      <div className="flow-icon">↗</div>
+
+      <div>
+        <span>03</span>
+        <strong>Performance & Reliability</strong>
+        <p>
+          Scalability, responsiveness and behaviour under real-world demand.
+        </p>
+      </div>
+    </div>
+
+    <div className="flow-connector">
+      <span></span>
+    </div>
+
+    <div className="flow-item flow-item-four">
+      <div className="flow-icon">AI</div>
+
+      <div>
+        <span>04</span>
+        <strong>AI-Assisted Insights</strong>
+        <p>
+          Risk patterns and testing priorities identified through intelligent analysis.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div className="release-outcome">
+    <div className="outcome-pulse"></div>
+
+    <div className="outcome-content">
+      <span>THE OUTCOME</span>
+      <strong>Clearer Release Confidence</strong>
+      <p>
+        Better visibility of quality risk. Better decisions before production.
+      </p>
+    </div>
+
+    <div className="outcome-arrow">→</div>
+  </div>
+</div>
 
       {/* EXPERIENCE STRIP */}
 
