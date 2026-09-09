@@ -263,6 +263,8 @@ export default function Home() {
     <div className="outcome-arrow">→</div>
   </div>
 </div>
+        </div>
+      </section>
 
       {/* EXPERIENCE STRIP */}
 
